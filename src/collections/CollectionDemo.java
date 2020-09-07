@@ -6,6 +6,8 @@ import java.util.Collections;
 
 public class CollectionDemo {
   public static void show() {
+    System.out.println("\n-------------- Collection demo --------------------");
+
     Collection<String> collection = new ArrayList<>();
     collection.add("a");
     collection.add("b");
@@ -14,13 +16,13 @@ public class CollectionDemo {
     // Add multiple items in one go
     Collections.addAll(collection, "a", "b", "c");
 
-    var size = collection.size();
+    System.out.println("size: " + collection.size());
 
     collection.remove("a");
-    var containsA = collection.contains("a");
+    System.out.println("contains a: " + collection.contains("a"));
 
     collection.clear();
-    var isEmpty = collection.isEmpty();
+    System.out.println("is empty: " + collection.isEmpty());
 
     Object[] objectArray = collection.toArray();
     String[] stringArray = collection.toArray(new String[0]);
@@ -29,6 +31,7 @@ public class CollectionDemo {
     other.add("a");
     other.add("b");
     other.add("c");
+
     System.out.println(collection == other);
     System.out.println(collection.equals(other));
   }

@@ -3,8 +3,9 @@ package generics;
 import java.util.Iterator;
 
 //Generic solution
+
 public class GenericList<T> implements Iterable<T> {
-  //private T[] items = new T[]10; //Java compiler does not know type at this stage
+  //private T[] items = new T[10]; //Java compiler does not know type at this stage
   private T[] items = (T[]) new Object[10]; //workaround for Java compiler
   private int count;
 

@@ -5,6 +5,8 @@ import java.util.Queue;
 
 public class QueueDemo {
   public static void show() {
+    System.out.println("\n-------------- Queue demo --------------------");
+
     Queue<String> queue = new ArrayDeque<>();
     queue.add("c");
     queue.add("a");

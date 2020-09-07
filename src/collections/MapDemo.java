@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class MapDemo {
   public static void show() {
+    System.out.println("\n-------------- Map demo --------------------");
+
     var c1 = new Customer("a", "e1");
     var c2 = new Customer("b", "e2");
 

@@ -6,6 +6,8 @@ import java.util.List;
 
 public class ComparableDemo {
     public static void show() {
+        System.out.println("\n-------------- Comparable demo --------------------");
+
         List<Customer> customers = new ArrayList<>();
         customers.add(new Customer("c", "email1"));
         customers.add(new Customer("b", "email2"));
