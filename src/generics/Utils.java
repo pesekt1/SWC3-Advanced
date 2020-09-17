@@ -43,7 +43,7 @@ public class Utils {
     public static void add(GenericList<? super User> users){
         users.add(new User(10));
         users.add(new Instructor(20));
-        //System.out.println(users.get(0)); //this is possible because its like Object x = users.get(0)
+        System.out.println(users.get(0)); //this is possible because its like Object x = users.get(0)
         //User user = users.get(0); //not possible - compiler does not know if we can cast to User type
     }
 

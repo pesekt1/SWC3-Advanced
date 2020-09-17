@@ -6,6 +6,7 @@ public class Main {
     //working with generics, run one method at a time:
     public static void main(String[] args) {
         intList();
+        numberList();
         userList();
         //objectList(); // will throw an exception
         genericList();
@@ -24,6 +25,19 @@ public class Main {
         //list.add(1.2); //not possible to add a double
         //list.add("abc"); //not possible to add a string
         System.out.println(list.get(0));
+    }
+
+    public static void numberList(){
+        System.out.println("\n------------- numberList---------------");
+        var integerList = new NumberList<Integer>();
+        integerList.add(1);
+
+        var doubleList = new NumberList<Double>();
+        doubleList.add(1.1);
+
+        //not possible because String is not a child class of Number class
+        //var stringList = new NumberList<String>();
+
     }
 
     public static void userList(){
@@ -119,7 +133,7 @@ public class Main {
         usersList.add(new Instructor(20));
         System.out.println("\nprint list of users:");
         Utils.printUsersFixed(usersList);
-        //Utils.printUsersFixed(instructorsList);
+
 
         var instructorsList = new GenericList<Instructor>();
         instructorsList.add(new Instructor(10));
@@ -127,6 +141,7 @@ public class Main {
         System.out.println("\nprint list of instructors:");
         Utils.printUsers(instructorsList);
 
+        //Utils.printUsersFixed(instructorsList);
         //not possible: GenericList<Instructor> is not a subtype of GenericList<User>
         //Utils.printUsersFixed(instructorsList);
 
