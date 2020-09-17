@@ -17,6 +17,8 @@ public class GenericList<T> implements Iterable<T> {
     return items[index];
   }
 
+
+  // this part is about collections - we want to be able to iterate over the items in our GenericList
   @Override
   public Iterator<T> iterator() {
     return new ListIterator(this);

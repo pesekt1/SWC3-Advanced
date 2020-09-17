@@ -36,7 +36,7 @@ public class Utils {
             //Object x = users.get(0);
             System.out.println(user);
         }
-        //users.add(new User(10)); //not possible
+        //users.add(new User(10)); //not possible ... we need to use "super" keyword
     }
 
     // ? super User: Java compiler will treat the unknown type as a parent of the User which is Object class

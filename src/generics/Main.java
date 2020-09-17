@@ -119,6 +119,7 @@ public class Main {
         usersList.add(new Instructor(20));
         System.out.println("\nprint list of users:");
         Utils.printUsersFixed(usersList);
+        //Utils.printUsersFixed(instructorsList);
 
         var instructorsList = new GenericList<Instructor>();
         instructorsList.add(new Instructor(10));
@@ -129,6 +130,7 @@ public class Main {
         //not possible: GenericList<Instructor> is not a subtype of GenericList<User>
         //Utils.printUsersFixed(instructorsList);
 
+        //wildcards
         Utils.add(usersList);
     }
 }
